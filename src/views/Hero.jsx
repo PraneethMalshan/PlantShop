@@ -3,6 +3,8 @@ import { useState } from "react";
 import OpenPG from "../assets/OpenPG.jpg"
 import MHomeLogo from "../assets/MHomeLogo.png";
 
+import NavLink from "../components/NavLink";
+
 const Hero = () => {
   return <div className="h-screen relative flex flex-col items-center"
    style={{
@@ -12,10 +14,18 @@ const Hero = () => {
         backgroundSize: "cover",
   }}
   >
-    <div className="relative w-full max-w-[1490] flex items-center justify-between pt-10 mx-auto px-10">
+    <div 
+      className="relative w-full max-w-[1490] flex 
+      items-center justify-between pt-10 mx-auto px-10"
+      >
       <img src={MHomeLogo} alt=""/>
 
-      <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]"></ul>
+      <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
+        <NavLink to="services">Services</NavLink>
+        <NavLink to="products">Shop</NavLink>
+        <NavLink to="reference">Reference</NavLink>
+        <NavLink to="care">Care</NavLink>
+      </ul>
     </div>
   </div>;
 };
