@@ -1,9 +1,15 @@
-import React from "react";
+
+import Hero from "./views/Hero";
+
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Hero />
+
+    </>
+
+    
   );
 }
 
