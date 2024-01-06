@@ -1,11 +1,13 @@
 
 import Hero from "./views/Hero";
+import Services from "./views/Services"
 
 
 function App() {
   return (
     <>
       <Hero />
+      <Services />
 
     </>
 

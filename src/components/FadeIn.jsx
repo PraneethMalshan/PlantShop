@@ -7,14 +7,14 @@ const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
 
   const ref = useRef(null);
 
-  const inInView = useInView(ref, {once:true});
+  const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      controls.start('visible');
+      controls.start("visible");
     }
-  }, [inInView, controls])
+  }, [isInView, controls]);
 
   return (
     <div 
@@ -31,7 +31,12 @@ const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
             x: direction === "right" ? -100 : direction === "left" ? 100 : 0,
             y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
           },
-      }}
+          visible: {
+            opacity: 1,
+            x: 0,
+            y: 0,
+          },
+        }}
       initial="hidden"
       animate={controls}
       transition={{
@@ -40,6 +45,7 @@ const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
         delay: delay,
         ease: [0.25,0.25,0.25,0.75]
       }}
+      className="w-full flex items-center justify-center"
       >
         {children}
       </motion.div>
