@@ -6,7 +6,7 @@ import productTwoIcon from "./assets/produc-two.svg";
 import productThreeIcon from "./assets/product-three.svg";
 
 
-export const heroTitle = "Bring Serenity to Your Place With Interior Plants";
+export const heroTitle = "Bring Serenity to Your Place With LEO Plants";
 export const heroSubtitle =
   "find your dream plant for your home decoration with us, and we will make it happen.";
 
@@ -51,6 +51,8 @@ export const products = [
   },
 ];
 
+export const referenceTitle = "LEO Plants Reference";
+export const referenceSubtitle = "make your home cozy with refreshing plants";
 
 
 
