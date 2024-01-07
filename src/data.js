@@ -4,6 +4,10 @@ import supportIcon from "./assets/support-icon.svg";
 import productOneIcon from "./assets/product-one.svg";
 import productTwoIcon from "./assets/produc-two.svg";
 import productThreeIcon from "./assets/product-three.svg";
+import plantIcon from "./assets/plant-icon.svg";
+import sunIcon from "./assets/sun-icon.svg";
+import waterIcon from "./assets/water-icon.svg";
+import temperatureIcon from "./assets/temperature-icon.svg";
 
 
 export const heroTitle = "Bring Serenity to Your Place With LEO Plants";
@@ -55,7 +59,35 @@ export const referenceTitle = "LEO Plants Reference";
 export const referenceSubtitle = "make your home cozy with refreshing plants";
 
 
+export const careTitle = "How to care for plants";
+export const careSubtitle = "Take care of plants with all your heart";
 
+export const careList = [
+  {
+    title: "Adjust Lighting",
+    subtitle:
+      "When caring for houseplants, make sure the room temperature is neither too cold nor too hot.",
+    img: sunIcon,
+  },
+  {
+    title: "Don't water too often",
+    subtitle:
+      "Watering ornamental houseplants does not have to be done every day.",
+    img: waterIcon,
+  },
+  {
+    title: "Choose the right container.",
+    subtitle:
+      "Houseplants will need different containers depending on their type and size.",
+    img: plantIcon,
+  },
+  {
+    title: "Fertilize regularly",
+    subtitle:
+      "The nutrients most indoor houseplants need are nitrogen for balance and potassium for stem strength.",
+    img: temperatureIcon,
+  },
+];
 
 
 

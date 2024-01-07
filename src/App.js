@@ -1,4 +1,5 @@
 
+import Care from "./views/Care";
 import Hero from "./views/Hero";
 import Services from "./views/Services"
 import Products from "./views/Products"
@@ -13,6 +14,7 @@ function App() {
       <Services />
       <Products />
       <Reference />
+      <Care />
     </>
 
     
