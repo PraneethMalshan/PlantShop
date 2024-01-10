@@ -27,7 +27,7 @@ export const heroSubtitle =
       icon: paymentIcon,
     },
     {
-      title: "24/7 Support",
+      title: "24/12 Support",
       subtitle: "Don't hesitate to contact us",
       icon: supportIcon,
     },
@@ -89,7 +89,32 @@ export const careList = [
   },
 ];
 
+export const newsletter = "Newsletter";
 
+export const footerLinksColumnOne = [
+  {
+    title: "Support",
+    links: ["About Us", "Careers", "Blog"],
+  },
+  {
+    title: "Useful Links",
+    links: ["Payment & Tax", "Terms of service", "Privacy Policy"],
+  },
+];
+
+export const footerLinksColumnTwo = [
+  {
+    title: "Our Menu",
+    links: ["Best Product", "Categories"],
+  },
+  {
+    title: "Address",
+    links: [
+      "NO: 584/A Thalawa Road, Elpitiya, Sri Lanka",
+      "leo@gmail.com",
+    ],
+  },
+];
 
 
 
